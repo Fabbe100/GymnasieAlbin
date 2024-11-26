@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Finder</title>
+    <title>Resturang Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Restaurant Finder!</h1>
-        <button id="find-restaurants">Find Nearby Restaurants</button>
+        <h1>Find Nearby Restaurants</h1>
     </header>
-    
-    <div id="map"></div>
-    
+
+    <main>
+        <!-- Centering wrapper for the button -->
+        <div class="button-wrapper">
+            <button id="show-map-btn">Show Nearby Restaurants</button>
+        </div>
+
+        <!-- Placeholder for the map -->
+        <div id="map"></div>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Fabian & Albin AB!</p>
+        <p>&copy;TheoFab Albin Co.</p>
     </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>
