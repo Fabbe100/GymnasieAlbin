@@ -54,6 +54,9 @@ function showMap() {
     } else {
         alert("Geolocation is not supported by your browser.");
     }
+
+    const showMapButton = document.getElementById('show-map-btn');
+    showMapButton.style.display = 'none';
 }
 
 // Add event listener to the button
